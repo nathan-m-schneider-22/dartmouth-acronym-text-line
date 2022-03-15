@@ -8,6 +8,9 @@ const app = express();
 app.use(bodyParser.urlencoded({ extended: false }));
 
 app.post('/', (req, res) => {
+  console.log("message received")
+  console.log(req.body)
+  
   const twiml = new MessagingResponse();
 
   if (req.body.Body == 'hello') {
