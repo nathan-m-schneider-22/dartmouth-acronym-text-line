@@ -10,7 +10,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.post('/', (req, res) => {
   console.log("message received")
   console.log(req.body)
-  
+
   const twiml = new MessagingResponse();
 
   if (req.body.Body == 'hello') {
@@ -27,6 +27,6 @@ app.post('/', (req, res) => {
   res.end(twiml.toString());
 });
 
-http.createServer(app).listen(1337, () => {
+http.createServer(app).listen(5555, () => {
   console.log('Express server listening on port 1337');
 });
