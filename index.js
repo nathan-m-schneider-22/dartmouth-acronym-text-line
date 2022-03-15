@@ -4,6 +4,8 @@ const MessagingResponse = require('twilio').twiml.MessagingResponse;
 const bodyParser = require('body-parser');
 
 const app = express();
+const mapping = require('./acronyms.json')
+console.log(mapp)
 
 app.use(bodyParser.urlencoded({ extended: false }));
 
@@ -13,13 +15,11 @@ app.post('/', (req, res) => {
 
   const twiml = new MessagingResponse();
 
-  if (req.body.Body == 'hello') {
-    twiml.message('Hi!');
-  } else if (req.body.Body == 'bye') {
-    twiml.message('Goodbye');
+  if (req.body.Body in mapping){
+    twiml.message(mapping[req.body.Body]);
   } else {
     twiml.message(
-      'No Body param match, Twilio sends this in the request to your server.'
+      'Could not find acronym'
     );
   }
 
