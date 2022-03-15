@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 
 const app = express();
 const mapping = require('./acronyms.json')
-console.log(mapp)
+console.log(mapping)
 
 app.use(bodyParser.urlencoded({ extended: false }));
 
