@@ -28,5 +28,5 @@ app.post('/', (req, res) => {
 });
 
 http.createServer(app).listen(5555, () => {
-  console.log('Express server listening on port 1337');
+  console.log('Express server listening on port 5555');
 });

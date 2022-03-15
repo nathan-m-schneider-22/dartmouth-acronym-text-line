@@ -1,5 +1,5 @@
 {
-  "name": "dartmouth-acronym-text-time",
+  "name": "dartmouth-acronym-text-line",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nathan-m-schneider-22/dartmouth-acronym-text-time.git"
+    "url": "git+https://github.com/nathan-m-schneider-22/dartmouth-acronym-text-line.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/nathan-m-schneider-22/dartmouth-acronym-text-time/issues"
+    "url": "https://github.com/nathan-m-schneider-22/dartmouth-acronym-text-line/issues"
   },
-  "homepage": "https://github.com/nathan-m-schneider-22/dartmouth-acronym-text-time#readme",
+  "homepage": "https://github.com/nathan-m-schneider-22/dartmouth-acronym-text-line#readme",
   "dependencies": {
     "body-parser": "^1.19.2",
     "express": "^4.17.3",
