@@ -27,6 +27,6 @@ app.post('/', (req, res) => {
   res.end(twiml.toString());
 });
 
-http.createServer(app).listen(5555, () => {
-  console.log('Express server listening on port 5555');
+http.createServer(app).listen(process.env.PORT, () => {
+  console.log(`Express server listening on port ${process.env.PORT}`);
 });
